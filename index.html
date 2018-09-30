@@ -20,8 +20,10 @@ background-image: radial-gradient(farthest-side at 55% 0%, #4FE9FB, #45CAF7, #38
 
 .block {padding-top: 10vh;padding-bottom: 5vh}
 .eyebrow {height: 1vh;margin: 1vmax;width: 15%;
-background: linear-gradient(to right,#389FF1,#cbe6fb, #cfc1af)}
-.topic {margin-left: 1vmax;font-size: 2vmax;color: #2E80EC;font-family: 'Raleway', sans-serif;}
+background: linear-gradient(to right,#45CAF7,#cbe6fb,#e1ded7,#cfc1af)}
+.topic {margin-left: 1vmax;font-size: 0;font-family: 'Raleway', sans-serif;}
+.topic :first-child {color: #2E80EC;font-size: 2vmax;}
+.topic :nth-child(2) {color:#b29c7f;font-size:2vmax}
 
 </style>
 
@@ -60,10 +62,11 @@ background: linear-gradient(to right,#389FF1,#cbe6fb, #cfc1af)}
 </div>
 
 <!--guidelines-->
-<div id="glines" class="block" style="padding-top:2vh">
-    <div class="eyebrow"></div>
+<div id="glines" class="block" style="padding-top:0.5vh">
+    <div class="eyebrow" style="width:98%"></div>
     <div class="topic">
-        Guidelines > ACC & Nice
+        <span>Guidelines ></span>
+        <span>> ACC & Nice</span>
     </div>
 </div>
 
