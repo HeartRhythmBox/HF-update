@@ -3,27 +3,36 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Raleway|Karma" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
 <style>
 .gradient{
 background-image: radial-gradient(farthest-side at 55% 0%, #4FE9FB, #45CAF7, #389FF1,#2E80EC)}
-.lightGray {color: #cbe6fb}
+.lightBlue {color: #cbe6fb}
+.superLightBlue {background-color: #f7fbfd}
 .sanB {font-family: 'Montserrat', sans-serif;}
 .san {font-family: 'Raleway', sans-serif;}
+.serif {font-family: 'Karma', serif;}
+
 .noLine {text-decoration: none}
-.menu {font-family: 'Raleway', sans-serif;font-size:1.8vmax;position:sticky;text-align: center}
+.menu {font-family: 'Raleway', sans-serif;font-size:1.8vmax;text-align: center;padding-top: 5vh;}
 .menu a {text-decoration: none}
 .mItem :hover {color: #45CAF7}
 
-.block {padding-top: 10vh;padding-bottom: 5vh}
-.eyebrow {height: 1vh;margin: 1vmax;width: 15%;
+.block {padding: 1vmax;margin: 15vh 0;
+background: linear-gradient(to bottom, #f7fbfd, #fbfdff)}
+.eyebrow {height: 1vh;margin: 1vh 1vw;width: 15%;
 background: linear-gradient(to right,#45CAF7,#cbe6fb,#e1ded7,#cfc1af)}
 .topic {margin-left: 1vmax;font-size: 0;font-family: 'Raleway', sans-serif;}
 .topic :first-child {color: #2E80EC;font-size: 2vmax;}
 .topic :nth-child(2) {color:#b29c7f;font-size:2vmax}
+.imgSec {padding: 5vh 2vw}
+.headline {padding:2vmax 3vmax 0.5vmax 3vmax;font-family: 'Karma', serif;color:#0B3976;
+font-size: 3vmax;line-height: 100%}
+.text {color: #969696;font-family: 'Raleway', sans-serif;line-height: 120%;font-size: 2vmax;
+        padding: 0.5vmax 3vmax}
 
 </style>
 
@@ -36,13 +45,13 @@ background: linear-gradient(to right,#45CAF7,#cbe6fb,#e1ded7,#cfc1af)}
         </span>
     </div>
     <div class="sanB" style="font-size: 5vmax;color: white;text-align: center">
-        <a href="#glines" class="noLine">
+        <a href="#menu" class="noLine">
         Heart Failure Rx</a></div>
-    <div class="san lightGray" style="font-size: 2.5vmax;">
+    <div class="san lightBlue" style="font-size: 2.5vmax;">
         <a href="#glines" class="noLine">guidelines</a> | 
         <a href="" class="noLine">trials</a>
     </div>
-    <div style="padding-top:2vmax;font-size: 2vmax" class="san lightGray">
+    <div style="padding-top:2vmax;font-size: 2vmax" class="san lightBlue">
     <a href="https://www.facebook.com/HeartRhythmBox" class="noLine">
         <i class="fab fa-facebook-square" style="font-size:2vmax;color:white"></i>
         HeartRhythmBox
@@ -50,28 +59,53 @@ background: linear-gradient(to right,#45CAF7,#cbe6fb,#e1ded7,#cfc1af)}
 </div>
 
 <!--menu-->
-<div class="w3-center" style="padding-top:10vh">
+<div id="menu" class="w3-center">
 <div class="w3-bar menu">
     <div class="w3-bar-item mItem" style="padding: 0.1vmax 2.5vmax">
         <a href="#home">Home</a></div>
     <div class="w3-bar-item mItem" style="padding: 0.1vmax 2.5vmax">
-        <a href="#glines mItem">Guidelines</a></div>
+        <a href="#glines">Guidelines</a></div>
     <div class="w3-bar-item mItem" style="padding: 0.1vmax 2.5vmax"><a href="">Trials</a></div>
 </div></div>
 
 </div>
 
-<!--guidelines-->
-<div id="glines" class="block" style="padding-top:0.5vh">
-    <div class="eyebrow" style="width:98%"></div>
+<!--guidelines- intro-->
+<div id="glines" class="block">
+    <div class="eyebrow"></div>
     <div class="topic">
         <span>Guidelines ></span>
         <span>> ACC & Nice</span>
+    </div>
+    <div class="imgSec w3-row w3-center w3-border-bottom">
+        <div class="w3-col s6">
+        <a href="https://www.ahajournals.org/doi/abs/10.1161/CIR.0000000000000509">
+            <img src="media/ACC/paper.png" style="width:100%"></a></div>
+        <div class="w3-col s6 w3-leftbar">
+        <a href="https://www.nice.org.uk/guidance/ng106">
+            <img src="media/NICE/paper.png" style="width:100%"></a></div>
+    </div>
+    <div class="headline">
+       ACC and NICE published their new guidelines last year and this year respectively.
+    </div>
+    <div class="text">
+        Minor dissimiarlities do occur, of course.
+    </div>
+</div>
+
+<!--guidelines fundamental-->
+<div class="block">
+    <div class="eyebrow"></div>
+    <div class="topic">
+        <span>Guidelines ></span>
+        <span>> Fundamental of HF Rx</span>
     </div>
 </div>
 
 
 <script>
+
+
 </script>	
 
 </body>
