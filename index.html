@@ -11,7 +11,7 @@
 .gradient{width: 100%;height: 100vh;text-align: center;
 background-image: radial-gradient(farthest-side at 55% 0%, #4FE9FB, #45CAF7, #389FF1,#2E80EC)}
 .gradient2 {background: linear-gradient(to bottom, #f7fbfd, #fbfdff)}
-.lightBlue {color: #cbe6fb}
+.lightBlue {color: #b6dcfa}
 .superLightBlue {background-color: #f7fbfd}
 .sanB {font-family: 'Montserrat', sans-serif;}
 .san {font-family: 'Raleway', sans-serif;}
@@ -19,19 +19,18 @@ background-image: radial-gradient(farthest-side at 55% 0%, #4FE9FB, #45CAF7, #38
 
 .noLine {text-decoration: none}
 
-.menu {font-family: 'Montserrat', sans-serif;font-size: 1.8vmax;width: 100%;
-background-color: #cbe6fb;color:#969696;padding: 0.5vmin 0;
+.menu {font-family: 'Montserrat', sans-serif;font-size: 2.5vmax;width: fit-content;
+color:#b6dcfa;padding:0.5vmax;position: fixed;z-index: 3;display: none;
+  top: 0.5vh;left: 0.5vmax;text-align: center;cursor: pointer;
 }
-.menuItem {padding: 3vmax;text-align: center}
-.menuItem:hover {opacity: 0.7}
-.sticky {
-  position: fixed;z-index: 3;
-  top: 0;
-  width: 100%;
-}
+.menuIcon :hover, .menuItem:hover {opacity: 0.7}
+
+.hideItem {font-size: 2.5vmax;display: none;color: #0B3976;}
+.menuItem {padding: 0.5vmax;background-color: #e1ded7;font-size: 1.8vmax;margin-top: 0.1vh;}
+.menuItem a {text-decoration: none}
 
 .block {margin: 3vh 0;position: relative;padding-top:7vh;}
-.blockHolder  {margin: 0 2vw;border-radius: 1vw;padding: 1vmax}
+.blockHolder  {margin: 0 3vw;border-radius: 1vw;padding: 1vmax}
 .eyebrow {height: 1vh;margin: 1vh 1vw;width: 15%;
 background: linear-gradient(to right,#45CAF7,#cbe6fb,#e1ded7,#cfc1af)}
 .topic {margin-left: 1vmax;font-size: 0;font-family: 'Raleway', sans-serif;}
@@ -78,7 +77,7 @@ font-size: 3vmax;line-height: 100%}
         </span>
     </div>
     <div class="sanB" style="font-size: 5vmax;color: white;text-align: center">
-        <a href="#menu" class="noLine" onclick="unblur()">
+        <a href="#glines" class="noLine" onclick="unblur()">
         Heart Failure Rx</a></div>
     <div class="san lightBlue" style="font-size: 2.5vmax;">
         <a href="#glines" class="noLine"  onclick="unblur()">guidelines</a> | 
@@ -92,12 +91,29 @@ font-size: 3vmax;line-height: 100%}
 </div>
 
 <!--menu-->
-<div id="menu">
-<div class="menu w3-bar">
-    <span><a href="#glines" class="noLine menuItem">Guidelines</a></span>
-    <span><a href="" class="noLine menuItem">Trials</a></span>
-    <span><a href="#Top" class="noLine menuItem">Top Page</a></span>
-</div></div>
+<div class="menu">
+    <div class="w3-bar">
+        <div class="w3-bar-block  menuIcon" onclick="showMenu()">
+        <i class="fab fa-creative-commons-nd"></i>
+        </div></div>
+
+    <!--onclick-->
+    <div class="hideItem w3-bar w3-center">
+    <div class="w3-bar-block"><i class="fas fa-chevron-circle-down" onclick="hideMenu()"></i></div>
+    <div class="w3-bar-block menuItem" title="guidelines">
+        <a href="#glines">G</a></div>
+    <div class="w3-bar-block menuItem" title="trials">
+        <a href="">T</a></div>
+    <div class="w3-bar-block menuItem" title="@HeartRhythmBox">
+        <a href="https://www.facebook.com/HeartRhythmBox" class="noLine" target="_blank">
+            <i class="fab fa-facebook-square"></i></a></div>
+    <div class="w3-bar-block menuItem" title="to Top">
+        <a href="#Top"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
+    </div>
+    </div>
+    
+</div>
 
 <!--start pointer-->
 <div onclick="pointer()"><span class="pointer" style="display: none"></span> 
@@ -172,7 +188,8 @@ window.addEventListener("keydown", function(event) {
 
 window.onload = function () {unblur()};
 window.ontouchmove = function () {unblur()};
-window.onscroll = function() {showMenu()};
+window.onscroll = function () {scroll()};
+
 
 function pointer() {
     var x = event.clientX;
@@ -185,17 +202,28 @@ function pointer() {
 
 //show menu
 
-var navbar = document.getElementById("menu");
-var sticky = navbar.offsetTop;
-
 function showMenu() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+    var icon = document.getElementsByClassName('menuIcon');
+    icon[0].style.display="none";
+    var hide = document.getElementsByClassName('hideItem');
+    hide[0].style.display="block";
 }
 
+function hideMenu() {
+    var icon = document.getElementsByClassName('menuIcon');
+    var hide = document.getElementsByClassName('hideItem');
+    hide[0].style.display="none";
+    icon[0].style.display="block";
+}
+
+function scroll() {
+    menu = document.getElementsByClassName("menu");
+    hideMenu();    
+    if (window.pageYOffset>=window.innerHeight){
+        menu[0].style.display="block"}
+    else {
+        menu[0].style.display="none"}
+}
 
 </script>	
 
