@@ -13,34 +13,11 @@ background-image: radial-gradient(farthest-side at 55% 0%, #4FE9FB, #45CAF7, #38
 .gradient2 {background: linear-gradient(to bottom, #f7fbfd, #fbfdff)}
 .lightBlue {color: #b6dcfa}
 .superLightBlue {background-color: #f7fbfd}
+.blue {background-color: #2E80EC}
+.blueTxt {color: #2E80EC}
 .sanB {font-family: 'Montserrat', sans-serif;}
 .san {font-family: 'Raleway', sans-serif;}
 .serif {font-family: 'Karma', serif;}
-
-.noLine {text-decoration: none}
-
-.menu {font-family: 'Montserrat', sans-serif;font-size: 2.5vmax;width: fit-content;
-color:#b6dcfa;padding:0.5vmax;position: fixed;z-index: 3;display: none;
-  top: 0.5vh;left: 0.5vmax;text-align: center;cursor: pointer;
-}
-.menuIcon :hover, .menuItem:hover {opacity: 0.7}
-
-.hideItem {font-size: 2.5vmax;display: none;color: #0B3976;}
-.menuItem {padding: 0.5vmax;background-color: #e1ded7;font-size: 1.8vmax;margin-top: 0.1vh;}
-.menuItem a {text-decoration: none}
-
-.block {margin: 3vh 0;position: relative;padding-top:7vh;}
-.blockHolder  {margin: 0 3vw;border-radius: 1vw;padding: 1vmax}
-.eyebrow {height: 1vh;margin: 1vh 1vw;width: 15%;
-background: linear-gradient(to right,#45CAF7,#cbe6fb,#e1ded7,#cfc1af)}
-.topic {margin-left: 1vmax;font-size: 0;font-family: 'Raleway', sans-serif;}
-.topic :first-child {color: #2E80EC;font-size: 2vmax;}
-.topic :nth-child(2) {color:#b29c7f;font-size:2vmax}
-.imgSec {padding: 5vh 2vw}
-.headline {padding:2vmax 3vmax 0.5vmax 3vmax;font-family: 'Karma', serif;color:#0B3976;
-font-size: 3vmax;line-height: 100%}
-.text {color: #969696;font-family: 'Raleway', sans-serif;line-height: 120%;font-size: 2vmax;
-        padding: 0.5vmax 3vmax}
 
 .pointer {
     cursor: pointer;
@@ -64,6 +41,36 @@ font-size: 3vmax;line-height: 100%}
     background-color: transparent;
     color: transparent;
 }
+
+.noLine {text-decoration: none}
+
+.menu {font-family: 'Montserrat', sans-serif;font-size: 2.5vmax;width: fit-content;
+color:#b6dcfa;padding:0.5vmax;position: fixed;z-index: 3;display: none;
+  top: 0.5vmax;left: 0.5vmax;text-align: center;cursor: pointer;
+  }
+.menuIcon :hover, .menuItem:hover {opacity: 0.7}
+
+.hideItem {font-size: 2.5vmax;display: none;color: #0B3976;}
+.menuItem {padding: 0.5vmax;background-color: #e1ded7;font-size: 1.8vmax;margin-top: 0.1vh;}
+.menuItem a {text-decoration: none}
+
+.block {margin: 3vh 0;position: relative;padding-top:5vh;}
+.blockHolder  {margin: 0 3vw;border-radius: 1vw;padding: 1vmax}
+.eyebrow {height: 1vh;margin: 1vh 1vw;width: 15%;
+background: linear-gradient(to right,#45CAF7,#cbe6fb,#e1ded7,#cfc1af)}
+.topic {margin-left: 1vmax;font-size: 0;font-family: 'Raleway', sans-serif;}
+.topic :first-child {color: #2E80EC;font-size: 2vmax;}
+.topic :nth-child(2) {color:#b29c7f;font-size:2vmax}
+.imgSec {padding: 5vh 2vw}
+.headline {padding:2vmax 3vmax 0.5vmax 3vmax;font-family: 'Karma', serif;color:#0B3976;
+font-size: 3vmax;line-height: 100%}
+.text {color: #969696;font-family: 'Raleway', sans-serif;line-height: 120%;font-size: 2vmax;
+        padding: 0.5vmax 3vmax}
+
+.firstL {font-size: 4vmax;color: #2E80EC}
+.ref {font-family: 'Karma', serif;font-size: 1vmax;color: #969696}
+.hoverBlue li:hover {color: #2E80EC;}
+
 
 </style>
 
@@ -94,7 +101,7 @@ font-size: 3vmax;line-height: 100%}
 <div class="menu">
     <div class="w3-bar">
         <div class="w3-bar-block  menuIcon" onclick="showMenu()">
-        <i class="fab fa-creative-commons-nd"></i>
+        <i class="fab fa-creative-commons-nd" style="text-shadow:rgba(203, 230, 251, 0.6) 1px 1px 10px"></i>
         </div></div>
 
     <!--onclick-->
@@ -143,6 +150,37 @@ font-size: 3vmax;line-height: 100%}
     </div>
 </div>
 
+<!--guidelines- BNP-->
+<div id="glines" class="block">
+    <div class="blockHolder gradient2">
+    <div class="eyebrow"></div>
+    <div class="topic">
+        <span>Guidelines ></span>
+        <span>> NT proBNP</span>
+    </div>
+    <div class="imgSec w3-row w3-center w3-border-bottom" style="max-height:80vh;overflow-y: scroll">
+        <img src="media/NICE/Dx Algo.jpg" style="width: 90%">
+    </div>
+    <div class="headline">
+       NICE said... NT proBNP has a greater
+       sensitivity over a range of thresholds compared to BNP. 
+    </div>
+    <div class="text">
+        Also, NT proBNP has a longer stability in blood samples and is not interfered by Sacubitril Valsartan 
+        compared to BNP. NICE, therefore, recommended NT proBNP over BNP as a diagnostic and prognostic marker
+        of heart failure. ACC, on the other hand, recommended either one.
+        <div class="ref">
+            <a href="https://www.nice.org.uk/guidance/ng106/evidence/full-guideline-pdf-6538850029">
+            2018 NICE full guideline</a>
+            <a href="https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000509">
+            2017 ACC</a>
+        </div>
+    </div>
+    <div class="w3-btn next" onmouseover="blockNav(1)"></div>
+    </div>
+</div>
+
+
 <!--guidelines fundamental-->
 <div class="block">
     <div class="blockHolder gradient2">
@@ -151,7 +189,22 @@ font-size: 3vmax;line-height: 100%}
         <span>Guidelines ></span>
         <span>> Fundamental of HF Rx</span>
     </div>
-    <div style="height:80vh"></div>
+    
+    <ul class="sanB w3-center hoverBlue" style="font-size:2.5vmax;line-height:130%;margin-top: 2vmax;padding: 2vmax;
+    list-style: none;color: #969696">
+        <li><span class="firstL">I</span>NFORMATION & SUPPORT </li>
+        <li><span class="firstL">S</span>ALT & <span class="firstL">F</span>LUID CONSUMPTION</li>
+        <li><span class="firstL">A</span>LCOHOL & <span class="firstL">S</span>MOKING CESSATION</li>
+        <li><span class="firstL">T</span>RAVELLING & <span class="firstL">D</span>RIVING</li>
+        <li><span class="firstL">C</span>ONTRACEPTION </li>
+        <li><span class="firstL">V</span>ACCINATIONS</li>
+    </ul>
+       
+    <div class="ref w3-center">
+        <a href="https://pathways.nice.org.uk/pathways/chronic-heart-failure#path=view%3A/pathways/chronic-heart-failure/managing-chronic-heart-failure.xml&content=view-index">
+        NICE Pathways</a>
+    </div>
+    </div>
     </div>
 </div>
 
@@ -203,6 +256,7 @@ function pointer() {
 //show menu
 
 function showMenu() {
+    unblur();
     var icon = document.getElementsByClassName('menuIcon');
     icon[0].style.display="none";
     var hide = document.getElementsByClassName('hideItem');
@@ -218,7 +272,7 @@ function hideMenu() {
 
 function scroll() {
     menu = document.getElementsByClassName("menu");
-    hideMenu();    
+    hideMenu();   
     if (window.pageYOffset>=window.innerHeight){
         menu[0].style.display="block"}
     else {
