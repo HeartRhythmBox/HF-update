@@ -43,6 +43,7 @@ background-image: radial-gradient(farthest-side at 55% 0%, #4FE9FB, #45CAF7, #38
     color: transparent;
 }
 
+
 .noLine {text-decoration: none}
 
 .menu {font-family: 'Montserrat', sans-serif;font-size: 2.5vmax;width: fit-content;
@@ -207,6 +208,7 @@ font-size: 3vmax;line-height: 100%}
         <a href="https://pathways.nice.org.uk/pathways/chronic-heart-failure#path=view%3A/pathways/chronic-heart-failure/managing-chronic-heart-failure.xml&content=view-index">
         NICE Pathways</a>
     </div>
+    <div class="w3-btn next" onmouseover="blockNav(1)"></div>
     </div>
 </div>
 
@@ -358,7 +360,7 @@ font-size: 3vmax;line-height: 100%}
                     </div></div>
             </div>
         </div>
-            <div class="w3-btn next" onmouseover="blockNav(1)"></div>
+        <div class="w3-btn next" onmouseover="blockNav(1)"></div>
         </div>
     </div>
 
@@ -421,46 +423,47 @@ font-size: 3vmax;line-height: 100%}
     </div>
 
 <!--Trials-->
-<div id="trial" class="blockHolder gradient3">
+
+<!--CAMERA MRI-->
+<div id="trial" class="blockHolder gradient3" style="margin-top: 6vh">
     <!--intro-->
     <div class="block" style="margin:0;padding: 0">
-    <div class="eyebrow"></div>
-    <div class="topic">
+        <div class="eyebrow"></div>
+        <div class="topic">
         <span>Trials ></span>
         <span>> CAMERA-MRI</span>
-    </div>
-    
-    <div class="w3-row">
-        <div class="w3-col s6 w3-padding">
-            <img src="" style="width:100%"></div>
-        <div class="w3-col s6">
-            <ul class="sanB w3-center hoverBlue" style="font-size:2.5vmax;line-height:130%;margin-top: 2vmax;padding: 2vmax;
-                list-style: none;color: #969696">
-                <li><span class="firstL">CAMERA-MRI</span></li>
-                <li>RCT, MULTICENTER</li>
-                <li>PERSISTENT AF</li>
-                <li>IDIOPATHIC CM</li>
-                <li>CATHETER ABLATION <span class="blueTxt">vs. </span>MEDICAL RATE CONTROL</li>
-                
-            </ul>
         </div>
-    </div>
-    <div class="ref w3-center">
-        <a href="http://www.onlinejacc.org/content/70/16/1949" target="_blank">
-            CAMERA-MRI</a>
-    </div>
-   
-    <div class="w3-btn next" onmouseover="blockNav(1)"></div>
+        <div class="ref" style="margin-left: 1.2vmax">
+            <a href="http://www.onlinejacc.org/content/70/16/1949" target="_blank">
+                ref: CAMERA-MRI</a>
+        </div>
+        
+        <div class="w3-row">
+            <div class="w3-col s6 w3-mobile w3-padding">
+                <img src="" style="width:100%"></div>
+            <div class="w3-col s6 w3-mobile">
+                <ul class="sanB w3-center hoverBlue" style="font-size:2.5vmax;line-height:130%;list-style: none;color: #969696">
+                    <li><span class="firstL">CAMERA-MRI</span></li>
+                    <li>RCT, MULTICENTER</li>
+                    <li>PERSISTENT AF</li>
+                    <li>IDIOPATHIC CM</li>
+                    <li>CATHETER ABLATION <span class="blueTxt">vs. </span>MEDICAL RATE CONTROL</li>
+                    
+                </ul>
+            </div>
+        </div>
+     
+        <div class="w3-btn next" style="left: 90vw" onmouseover="blockNav(1)"></div>
     </div>
 
     <!--baseline char-->
-    <div class="block" style="margin:0;padding: 0">
+    <div class="block" style="margin-top:10vh">
                       
         <div class="w3-row">
-            <div class="w3-col s4 w3-padding">
+            <div class="w3-col l4 m4 s6 w3-mobile w3-padding">
                 <img src="media/Camera/lesions.png" style="width:100%"></div>
-            <div class="w3-col s8">
-                <ul class="sanB hoverBlue" style="font-size:2.5vmax;line-height:130%;margin-top: 2vmax;padding: 2vmax;
+            <div class="w3-col w3-mobile l8 m8 s6">
+                <ul class="sanB hoverBlue" style="font-size:2.5vmax;line-height:130%;
                     list-style: none;color: #969696">
                     <li>N=301, Age = , LVEF =</li>
                     <li>Catheter ablation = PVI + Box lesion</li>
@@ -470,13 +473,58 @@ font-size: 3vmax;line-height: 100%}
                 </ul>
             </div>
         </div>
-        <div class="ref w3-center">
-            <a href="http://www.onlinejacc.org/content/70/16/1949" target="_blank">
-                CAMERA-MRI</a>
-        </div>
         
-        <div class="w3-btn next" onmouseover="blockNav(1)"></div>
-        </div>
+        <div class="w3-btn next" style="left: 90vw" onmouseover="blockNav(1)"></div>
+    </div>
+    
+    <!--results-->
+    <div class="block" style="margin-top:10vh">
+                      
+        <div class="w3-row">
+            
+            <div class="w3-col w3-mobile s6">
+                <ul class="sanB hoverBlue" style="font-size:2.5vmax;line-height:130%;
+                    list-style: none;color: #969696">
+                    <li><span class="firstL">RESULTS</span></li>
+                </ul></div>
+            <div class="w3-col s6 w3-mobile w3-padding">
+                <img src="media/Camera/lesions.png" style="width:100%"></div>                            
+                
+            </div>
+        <div class="w3-btn next" style="left: 90vw" onmouseover="blockNav(1)"></div>
+    </div>
+
+    <!--subanalysis-->
+    <div class="block" style="margin-top:10vh">
+                      
+        <div class="w3-row">
+            
+            <div class="w3-col w3-mobile s6">
+                <ul class="sanB hoverBlue" style="font-size:2.5vmax;line-height:130%;
+                    list-style: none;color: #969696">
+                    <li><span class="firstL">RESULTS</span></li>
+                </ul></div>
+            <div class="w3-col s6 w3-mobile w3-padding">
+                <img src="media/Camera/LGE.png" style="width:100%"></div>                            
+                
+            </div>
+        <div class="w3-btn next" style="left: 90vw" onmouseover="blockNav(1)"></div>
+    </div>
+</div>
+
+<!--CASTLE-->
+<div class="blockHolder gradient3" style="margin-top: 6vh">
+        <div class="block" style="margin:0;padding: 0">
+            <div class="eyebrow"></div>
+            <div class="topic">
+                <span>Trials ></span>
+                <span>> CASTLE-AF</span>
+                
+            </div>
+            <div class="ref" style="margin-left: 1.2vmax">
+                    <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1707855" target="_blank">
+                        ref: CASTLE-AF</a>
+                </div>
 </div>
 
 <!--end pointer-->
