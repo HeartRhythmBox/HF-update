@@ -834,7 +834,7 @@ font-size: 3vmax;line-height: 100%}
 <!--conclusion-->
 <div class="block conclusion" style="margin-top:10vh;">
     <div class="sanB"
-    style="font-size: 6vmax;color: #b6dcfa;text-align: left;line-height: 50%;
+    style="font-size: 6vmax;color: #b6dcfa;text-align: left;line-height: 50%;width:fit-content;
     transform: rotate(90deg);transform-origin: 5% bottom">
     CONCLUSIONS
     </div>
@@ -863,9 +863,23 @@ font-size: 3vmax;line-height: 100%}
     
 </div>
 
-
 <!--end pointer-->
 </div>
+
+<div class="w3-row w3-center san" style="font-size: 1.1vmax;color:#868686">
+    <a href="https://heartrhythmbox.github.io/main/" target="_blank" style="text-decoration:none">
+        <img src="box transparent.png" style="width:1.3vmax">
+        HeartRhythmBox: Main Page
+    </a> <span style="color:black"> &#9679; </span>
+    <a href="#top" style="text-decoration:none;color:black">&uArr; to top</a>
+    <span style="color:black"> &#9679; </span>
+    <a href="https://www.facebook.com/HeartRhythmBox" style="text-decoration:none" target="_blank">
+        <i class="fab fa-facebook-square" style="color:#2E80EC;font-size: 1.2vmax"></i>
+        FB: @HeartRhythmBox
+    </a>
+
+</div>
+
 
 
 <script src="block navigation.js" ></script>
@@ -930,8 +944,10 @@ function hideMenu() {
 
 function scroll() {
     menu = document.getElementsByClassName("menu");
+    block = document.getElementsByClassName('block');
+    l = (block.length)-1;
     hideMenu();   
-    if (window.pageYOffset>=window.innerHeight){
+    if (window.pageYOffset>=window.innerHeight && (window.pageYOffset<block[l].offsetTop)){
         menu[0].style.display="block"}
     else {
         menu[0].style.display="none"}
