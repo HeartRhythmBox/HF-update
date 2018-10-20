@@ -80,6 +80,10 @@ font-size: 3vmax;line-height: 100%}
 .cutoutTxt {border: 0.2vmin white solid;background:white;mix-blend-mode:screen;font-size: 3vmax;
     font-family: 'Montserrat', sans-serif;}
 
+@media only screen and (max-width: 600px) {
+    .noMobile {display: none}
+}
+
 </style>
 
 <!--home-->
@@ -866,17 +870,17 @@ font-size: 3vmax;line-height: 100%}
 <!--end pointer-->
 </div>
 
-<div class="w3-row w3-center san" style="font-size: 1.5vmax;color:#868686">
+<div class="w3-row w3-center san" style="font-size: 1.5vmax;color:#868686;padding: 1vh">
     <a href="https://heartrhythmbox.github.io/main/" target="_blank" style="text-decoration:none">
         <img src="box transparent.png" style="width:1.8vmax">
-        HeartRhythmBox: Main Page
+        <span class="noMobile">HeartRhythmBox: Main Page</span>
     </a> <span style="color:black">&nbsp; &#9679; </span>
     <a href="#top" style="text-decoration:none;color:black">&nbsp; &uArr; to top &nbsp;</a>
     <span style="color:black"> &#9679; </span>
     <a href="https://www.facebook.com/HeartRhythmBox" style="text-decoration:none" target="_blank">
         &nbsp;
         <i class="fab fa-facebook-square" style="color:#2E80EC;font-size: 1.5vmax"></i>
-        FB: @HeartRhythmBox
+        <span class="noMobile">FB: @HeartRhythmBox</span>
     </a>
 
 </div>
